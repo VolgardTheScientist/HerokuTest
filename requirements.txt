@@ -1,4 +1,4 @@
-./vendor/my_package
+./vendor/ifcpatch
 altair==4.1.0
 geopy==2.3.0
 geopandas==0.13.2

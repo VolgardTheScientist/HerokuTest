@@ -9,6 +9,8 @@ import tempfile
 from vendor import ifcpatch
 import os
 import time
+import sys
+sys.path.append('./vendor')
 
 def move_to_origin(ifc_file, guid):
     part = ifc_file.by_guid(guid)

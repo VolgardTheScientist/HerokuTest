@@ -28,15 +28,16 @@ def move_to_origin(ifc_file, guid):
 
 st.title('BIMease: extract an IFC Element')
 
-st.markdown("""Welcome to the BIMease Platform!
+st.markdown("""
+Welcome to the BIMease Platform!
 
 Ever wanted to quickly extract an object from a large BIM model for your own project? You're in the right place. Upload your BIM model, input the GUID, and voila—your object is yours, effortlessly.
 
-Built on the robust framework of IfcOpenShell, the aim of BIMease is to simplify your BIM tasks. If you find BIMease useful, consider "buying me a coffee" to support the continued development of straightforward IFC tools. You can also support the innovative IfcOpenShell team by clicking here.
+Built on the robust framework of IfcOpenShell, the aim of BIMease is to simplify your BIM tasks. If you find BIMease useful, consider [buying me a coffee](https://www.buymeacoffee.com/piotrpiotrowski) to support the continued development of straightforward IFC tools. You can also support the innovative IfcOpenShell team by clicking here.
 
 Jump in, and experience a streamlined BIM workflow like never before!
-
 """)
+
 
 uploaded_file = st.file_uploader("Choose an IFC file", type=['ifc'])
 guid = st.text_input("Enter the GUID of the element to move:")
